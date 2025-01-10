@@ -1,0 +1,36 @@
+{% extends "trackhub/partials/base_connected.twig" %}
+{% block content %}
+<div class="container">
+  <h1 id="title_trackhub" class="text-center">Bienvenue sur votre compte admin</h1>
+</div>
+  
+  <div class="container card bg-light mt-5 text-center" style="height: 350px;width:700px">
+    <div class="row my-auto">
+      <div class="col-5 mb-5">
+        <a href="{{adress}}?page=consumer" class="btn btn-success">EXPÉDITEURS</a>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-5">
+        <a href="{{adress}}?page=consumer" class="btn btn-success">DESTINATAIRES</a>
+      </div>
+
+      <div class="col-5 mb-5">
+        <a href="" class="btn btn-success">AJOUTER UNE POSITION</a>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-5">
+        <a href="" class="btn btn-success">AJOUTER UN COMPTE</a>
+      </div>
+
+      <div class="col-5">
+        <a href="" class="btn btn-success">MODIFIER DROITS</a>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-5">
+        <a href="" class="btn btn-success">STATISTIQUES</a>
+      </div>
+    </div>
+  </div>
+    
+{% endblock content %}
+  

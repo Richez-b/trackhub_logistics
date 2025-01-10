@@ -1,0 +1,97 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="?page=home">Accueil</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+          <div>
+            <h1 id="title_story">Nous contacter</h1>
+        </div>
+    </div>
+
+    <section class="container">
+        <div id="contact_form" class="mx-auto">
+            <div class="row shadow text-center fw-bold bg-light">
+                <div class="col-5 p-4 ">
+                    <strong>SIÈGE TRACKHUB</strong>
+                    <p>10 Rue de la République<br>82000 Montauban<br>France</p>
+                    <p><strong>Tél :</strong> 05 05 05 05 05</p>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-self-center fw-bold text-dark" style="height: 180px;">
+                    <div class="vr"></div>
+                    </div>
+                <div class="col-5 p-4">
+                    <strong>HORAIRES</strong>
+                    <p>Du Lundi au Vendredi</p>
+                    <p>9h à 12h<br>14h à 19h</p>
+                </div>
+                </div>
+                <div class=" row shadow mt-5 bg-light">
+                    <form class="p-3">
+                        <div class="input-group mb-3">
+                                <label for="" class="input-group-text">Société *</label>
+                                <input type="text" class="form-control" id="" placeholder="Votre société" required>
+                            </div>
+                        <div class="input-group mb-3">
+                            <label for="" class="input-group-text">Siret *</label>
+                            <input type="text" class="form-control" id="" placeholder="Votre numéro de Siret" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="" class="input-group-text">Adresse</label>
+                            <input type="text" class="form-control" id="" placeholder="Votre adresse">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="" class="input-group-text">Code postal</label>
+                            <input type="number" class="form-control" id="" placeholder="Votre code postal">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="" class="input-group-text">Ville</label>
+                            <input type="text" class="form-control" id="" placeholder="Votre ville">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span for="" class="input-group-text">Email *</span>
+                            <input type="email" class="form-control" id="" placeholder="Votre mail" required>
+                        </div>
+                        <div class="input-group mb-3">        
+                            <span class="input-group-text">Téléphone *</span>
+                            <input class="form-control" type="tel" placeholder="Votre numéro de téléphone" required>                        
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text ">Votre demande concerne : *</label>
+                            <div class=" select">
+                                <select class="form-select" aria-label="">
+                                    <option selected>Chosissez un motif</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Votre message</span>
+                            <textarea class="form-control" aria-label="texte" placeholder="Votre texte ici..."></textarea>
+                          </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    J'accepte que mes coordonnées soient utilisées par TrackHub afin de me communiquer des informations.
+                                </label>
+                              </div>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary" type="submit">Validez ma demande</button>
+                        </div>
+            
+                        <h6 class="mt-2 ">*champs obligatoires</h6>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.72.0"
+  },
+  "scripts": {
+    "css": "sass --load-path=node_modules src/css/styles.scss public/css/styles.css",
+    "start": "npm run css -- --watch"
+  }
+}

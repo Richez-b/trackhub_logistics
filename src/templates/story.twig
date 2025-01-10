@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<section id="story" style="height:400px"></section>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page"> {{title}} </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 id="title_story"> {{title}} </h1>
+    </div>
+</div>
+    <div class="card container bg-light shadow mt-5">
+        <div class="card-body ">
+            <p class="h4 text-black fw-light p-3">TrackHub Logistics est né d'une idée simple : révolutionner la manière dont les entreprises gèrent leurs palettes et optimisent leur logistique. <br><br>
+
+                L'idée est venue d'une expérience personnelle vécue par notre fondateur lorsqu'il travaillait pour une entreprise de transport. <br><br>
+                
+                Pendant des années, il a observé les inefficacités liées à la gestion des palettes et les difficultés pour les retrouver en temps voulu. Lors d’une discussion avec des collègues du secteur, il réalisa qu'il y avait une réelle opportunité d'améliorer la traçabilité et l'efficacité du suivi des palettes en utilisant les technologies émergentes. <br><br>
+                
+                C'est ainsi qu'est née TrackHub Logistics, une entreprise bâtie sur des valeurs de transparence, de fiabilité, et d'innovation. <br><br>
+                
+                Aujourd'hui, TrackHub Logistics collabore avec des entreprises de toutes tailles, des petites entreprises locales aux grandes industries internationales. Grâce à une écoute attentive et une adaptation constante aux besoins de ses clients, TrackHub est devenu un partenaire de confiance pour toutes les entreprises souhaitant optimiser leur gestion de palettes et renforcer leur chaîne logistique. <br><br>
+                
+                Et ce n'est que le début ! Avec une équipe toujours motivée et une technologie en constante évolution, TrackHub Logistics continue d’innover pour offrir des solutions logistiques à la hauteur des enjeux de demain.
+            </p>
+        </div>
+    </div>
+{% endblock content %}

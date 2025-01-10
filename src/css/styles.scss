@@ -1,0 +1,208 @@
+// Définir des couleurs personnalisées
+$is-white:#fff;
+$is-black:#000;
+$is-primary: #FFD600;
+$is-bg-primary: #3B3A76;
+$is-grey:#D7D6D6;
+$is-blue:#003A85;
+@use "../node_modules/bootstrap/scss/bootstrap";
+// Use Bootstrap SCSS files
+
+// GÉNÉRAL //
+body {
+  margin:0;
+  padding: 0;
+  background-color: #D7D6D6;
+}
+
+// SECTION PRESENTATION //
+#presentation {
+  #title_presentation {
+    color:#003A85;
+    border-bottom: 5px solid #FFD600;
+    width: fit-content;
+    margin-bottom: 50px;
+  }
+  .card {
+    height: 250px;
+  }
+  a {
+    font-weight: bold;
+  }
+
+}
+#title_trackhub {
+  color:#003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin: auto;
+}
+// SECTION TRANSPORT //
+#transport {
+  display: flex;
+  flex-direction: column;
+  background: url(/assets/images/transport.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 400px;
+  #back_transport {
+    .subtitle {
+      width: 800px;
+      justify-self: center;
+      margin-top: 20px;
+    }
+  }
+  #title_transport {
+    color: white;
+    border-bottom: 5px solid #FFD600;
+    width: fit-content;
+    justify-self: center;
+  }
+  p {
+    color: white;
+  }
+  a{
+    margin-top: 10px;
+  }
+  #btn_transport {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+.vr {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: auto;
+  }
+  #contact_form {
+    width:600px;
+  }
+
+  .navbar-custom {
+    background-color: #3B3571; /* Couleur violette */
+  }
+
+  .navbar-custom .navbar-brand img {
+    height: 80px; /* Hauteur du logo */
+  }
+
+  .navbar-nav {
+    margin: 0 auto; /* Centre les éléments de la navigation */
+  }
+
+  .navbar-custom .nav-link {
+    color: white !important;
+    margin-right: 60px; /* Espacement entre les liens */
+  }
+
+  .btn-contact {
+    background-color: #FFD700; /* Couleur jaune */
+    color: black;
+    font-weight: bold;
+    margin-left: 40px; /* Espacement après TrackHub */
+  }
+
+  .btn-contact:hover {
+    background-color: #FFC107; /* Jaune légèrement plus foncé */
+    color: black;
+  }
+
+  .footer-custom {
+    background-color: #3B3571; /* Couleur violette */
+    color: white;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  /* Style du logo */
+  .footer-logo img {
+    height: 80px;
+    margin-right: 50px;
+  }
+
+  /* Style des boutons centraux */
+  .footer-buttons .btn {
+    background-color: #FFD700; /* Couleur jaune */
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
+  .footer-buttons .btn:hover {
+    background-color: #FFC107;
+    color: black;
+  }
+
+
+  .pentagon-btn {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 60px;
+    height: 60px;
+    background-color: #FFD700;
+    clip-path: polygon(70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%, 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      background: white;
+    }
+    i {
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+
+  #story {
+    background: url(/assets/images/story_truck.png) no-repeat;
+    background-size: cover;
+  }
+  .container {
+    margin-top: 20px;
+    nav.breadcrumb ul  {
+      li a{
+        color:black;
+      }
+    }
+  }
+  #title_story {
+    color:$is-blue;
+    border-bottom: 5px solid $is-primary;
+    width: fit-content;
+    margin-bottom: 50px;
+  }
+  #story_text {
+    .card-content {
+      margin-bottom: 100px;
+      p {
+        margin: 40px;
+      }
+    }
+  }
+  
+  #services {
+    background: url(/assets/images/services.png) no-repeat;
+    background-size: cover;
+  }
+  #services_text {
+    .card-content {
+      margin-bottom: 100px
+    }
+    p {
+      margin: 40px
+    }
+    p:nth-child(even){
+      color: $is-blue;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }

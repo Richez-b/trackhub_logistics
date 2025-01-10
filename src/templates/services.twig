@@ -1,0 +1,34 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<div id="services" style="height:400px"></div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page"> {{title}} </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 id="title_story"> {{title}} </h1>
+    </div>
+</div>
+
+<div class="container shadow bg-light p-5 my-5" id="services_text">
+    <div class="text-center">
+        <p class="text-black">
+            Chez TrackHub Logistics, nous offrons des solutions de gestion et de suivi de palettes spécialement conçues pour optimiser l'efficacité et la traçabilité de votre chaîne d'approvisionnement. Notre gamme de services innovants permet de mieux contrôler les mouvements de vos palettes, de réduire les pertes, et de faciliter les échanges de données pour une gestion plus fluide et transparente. Voici un aperçu de nos principaux services :
+        </p>
+        <p class="h3 text-primary">1. SUIVI EN TEMPS RÉEL DES PALETTES</p>
+        <p class="text-black">
+            Notre service de suivi en temps réel permet à nos clients de localiser instantanément leurs palettes et de suivre leurs déplacements tout au long de la chaîne logistique. Grâce à des technologies de pointe telles que le GPS et les balises RFID, nous offrons une visibilité complète sur chaque palette, réduisant ainsi les pertes et facilitant la gestion des stocks.
+        </p>
+        <p class="h3 text-primary">2. INTÉGRATION AVEC VOS SYSTÈMES EXISTANTS</p>
+        <p class="text-black">
+            Pour garantir une compatibilité optimale avec vos systèmes existants, nous offrons un service d'intégration sur-mesure. Que vous utilisiez un ERP, un WMS, ou un autre logiciel de gestion, nos solutions s’intègrent facilement dans votre environnement, facilitant ainsi le transfert de données et l’automatisation de vos processus de gestion de palettes.
+            En choisissant TrackHub Logistics, vous faites le choix d'une gestion de palettes optimisée, fiable et parfaitement adaptée aux besoins des entreprises modernes. Nous nous engageons à vous offrir des services de qualité pour un suivi efficace, une meilleure visibilité, et un contrôle optimal de votre logistique.
+        </p>      
+    </div>
+</div>
+{% endblock content %}
