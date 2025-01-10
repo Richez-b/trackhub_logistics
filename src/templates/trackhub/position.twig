@@ -1,0 +1,159 @@
+{% extends "trackhub/partials/base_connected.twig" %}
+
+{% block content %}
+<div class="container text-center">
+  <h2>Position : 0001</h2>
+</div>
+<div class="container my-5">
+  <div class="row">
+      <div class="col-12 d-flex justify-content-between ">
+          <!-- Tabs Navigation -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">Général</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="reclamation-tab" data-bs-toggle="tab" data-bs-target="#reclamation" type="button" role="tab" aria-controls="reclamation" aria-selected="false">Réclamation</button>
+              </li>
+          </ul>
+          <!-- Modifier et Supprimer Buttons -->
+          <div>
+              <button class="btn btn-custom btn-modifier me-2">Modifier</button>
+              <button class="btn btn-custom btn-supprimer">Supprimer</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="border rounded border-dark p-3 mb-3">
+            <strong>Coca-cola</strong><br>
+              10 Rue de la production<br>
+              31320 Castanet-Tolosan
+          </div>
+          <div class="border border-dark rounded p-3">
+            <strong>Socamil</strong><br>
+            511 Av. Gérard Rouvière<br>
+            11400 Castelnaudary
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-bordered text-center">
+                <thead>
+                  <tr>
+                    <th>Nb Pal</th>
+                    <th>Pal (eur)</th>
+                    <th>Pal sol</th>
+                    <th>Poids (kg)</th>
+                    <th>M. plancher</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td><strong>1500</strong></td>
+                    <td><strong>0.40</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="text-center">Dates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Date d'expédition</td>
+                    <td>05/11/24</td>
+                  </tr>
+                  <tr>
+                    <td>Rendez-vous</td>
+                    <td> 08/11/24</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="text-center">Références</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>N° de récépissé</td>
+                    <td>0001</td>
+                  </tr>
+                  <tr>
+                    <td>Rendez-vous</td>
+                    <td> 08/11/24</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-8">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th colspan="2" class="text-center">Instructions supplémentaires</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Livraison le 08/11/24, BL sur palette</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Remontée d'information</th>
+                <th>Date justification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href=""><i class="bi bi-plus-circle text-primary"></i></a> 05/11/24</td>
+                <td>Expédiée / expédition conforme</td>
+                <td>08/11/24 Castanet-Tolosan</td>                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+    <p>Les documents associés à cette livraison apparaîtront ici.</p>
+  </div>
+  <div class="tab-pane fade" id="reclamation" role="tabpanel" aria-labelledby="reclamation-tab">
+    <p>Aucune réclamation pour cette livraison pour le moment.</p>
+  </div>
+  </div>
+</div>
+{% endblock content %}

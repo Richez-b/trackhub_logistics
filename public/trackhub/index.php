@@ -22,14 +22,23 @@ try {
     case 'account':
       echo $twig->render('trackhub/account.twig', ['title' => 'Mon compte','adress'=>$adress]);
       break;
-    case 'consumer':
+    case 'add/consumer':
       echo $twig->render('trackhub/add_entity.twig', ['title' => 'Ajouter expéditeur ou destinataire','adress'=>$adress]);
       break;
+    case 'consumer/addressees':
+      echo $twig->render('trackhub/addressees.twig',['title' =>'Destinataires','adress'=>$adress]);
+      break;
+      case 'consumer/sender':
+        echo $twig->render('trackhub/addressee.twig',['title'=>'Expéditeurs','adress'=>$adress]);
+        break;
     case 'connect':
       echo $twig->render('trackhub/connect.twig', ['title' => 'App Trackhub connexion','adress'=>$adress]);
       break;
-    case 'position':
+    case 'positions':
       echo $twig->render('trackhub/all_position.twig',['title'=>'Positions','adress'=>$adress]);
+      break;
+    case 'position':
+      echo $twig->render('trackhub/position.twig',['title'=> 'Position name','adress'=>$adress]);
       break;
   }
 } catch (Exception $e){
