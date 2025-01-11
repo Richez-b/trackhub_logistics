@@ -1,0 +1,49 @@
+{% extends "trackhub/partials/base_connected.twig" %}
+
+{% block content %}
+  <div class="container">
+    <h2 class="text-center">Ajouter une position</h2>
+  </div>
+  <div class="container card" style="width: 600px;">
+    <form action="">
+      <div class="input-group my-3">
+        <label class="input-group-text ">Expéditeur</label>
+        <div class=" select">
+          <select class="form-select" aria-label="" spellcheck="false">
+            <option selected>Séléctionner un expéditeur</option>
+            <option value="">Coca cola</option>
+          </select>
+        </div>
+        <a href="{{adress}}?page=add-entity" class="btn btn-success ms-2 rounded">Ajouter un expéditeur</a>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text ">Destinataire</label>
+        <div class=" select">
+          <select class="form-select" aria-label="" spellcheck="false">
+            <option selected>Séléctionner un destinataire</option>
+            <option value="">Leclerc</option>
+          </select>
+        </div>
+        <a href="{{adress}}?page=add-entity" class="btn btn-success ms-2 rounded">Ajouter un destinataire</a>
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Nombre de palette</label>
+        <input type="number" max="33" class="form-control" name="" id="" placeholder="Ex : 22"/>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Palette consignée (Europe)</label>
+        <input type="number" max="33" class="form-control" name="" id="" placeholder="Ex : 10"/>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Poids total (kg)</label>
+        <input type="number" max="33" class="form-control" name="" id="" placeholder="Ex : 11000 pour 11T"/>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Mètre plancher</label>
+        <input type="number" max="33" class="form-control" name="" id="" placeholder="Ex : 6 pour 15 palettes"/>
+      </div>
+    </form>
+    <input type="submit" class="btn btn-success mb-3" value="AJOUTER" style="width: 180px;margin:auto;">
+  </div>
+{% endblock content %}

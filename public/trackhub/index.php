@@ -40,6 +40,12 @@ try {
     case 'position':
       echo $twig->render('trackhub/position.twig',['title'=> 'Position name','adress'=>$adress]);
       break;
+    case 'add-position':
+      echo $twig->render('trackhub/add_position.twig',['title'=>'Ajouter une position', 'adress'=>$adress]);
+      break;
+    case 'add-entity':
+      echo $twig->render('trackhub/add_entity.twig',['title'=>'Ajouter un expéditeur ou un destinataire','adress'=>$adress]);
+      break;
   }
 } catch (Exception $e){
   echo 'Erreur : ' . $e->getMessage();

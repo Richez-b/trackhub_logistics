@@ -1,1 +1,46 @@
 {% extends "trackhub/partials/base_connected.twig" %}
+
+{% block content %}
+<div class="container">
+  <h2 class="text-center">Ajouter un expéditeur ou un destinataire</h2>
+</div>
+<div class="container card" style="width: 600px;">
+  <form action="">
+    <div class="input-group my-3">
+      <div class=" select">
+        <select class="form-select" aria-label="" spellcheck="false">
+          <option selected>Séléctionner</option>
+          <option value="">Expéditeur</option>
+          <option value="">Destinataire</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">Nom</label>
+      <input type="text" class="form-control" name="" id="" placeholder="Ex : Leclerc"/>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Adresse</label>
+      <input type="text"class="form-control" name="" id="" placeholder="Ex : 10 rue de la république"/>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Code postal</label>
+      <input type="number" maxlength="5" minlength="5" class="form-control" name="" id="" placeholder="Ex : 11000"/>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Ville</label>
+      <input type="text" class="form-control" name="" id="" placeholder="Ex : Narbonne"/>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Téléphone</label>
+      <input type="number" minlength="10" maxlength="10" class="form-control" name="" id="" placeholder="Ex : 0504030201"/>
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Nom du responsable</label>
+      <input type="text" class="form-control" name="" id="" placeholder="Ex : Dupont"/>
+    </div>
+    <input type="submit" class="btn btn-success mb-3 d-flex" value="AJOUTER" style="width: 180px;margin:auto;">
+  </form>
+</div>
+{% endblock content %}
