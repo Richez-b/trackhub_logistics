@@ -29,7 +29,7 @@ try {
       echo $twig->render('trackhub/addressees.twig',['title' =>'Destinataires','adress'=>$adress]);
       break;
       case 'consumer/sender':
-        echo $twig->render('trackhub/addressee.twig',['title'=>'Expéditeurs','adress'=>$adress]);
+        echo $twig->render('trackhub/sender.twig',['title'=>'Expéditeurs','adress'=>$adress]);
         break;
     case 'connect':
       echo $twig->render('trackhub/connect.twig', ['title' => 'App Trackhub connexion','adress'=>$adress]);

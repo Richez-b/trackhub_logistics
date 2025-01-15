@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="container text-center">
-  <h2>Position : 0001</h2>
+  <h2 class="trackhub_title">Position : 1</h2>
 </div>
-<div class="container my-5">
+<div class="container my-5" id="position">
   <div class="row">
       <div class="col-12 d-flex justify-content-between ">
           <!-- Tabs Navigation -->
@@ -29,7 +29,7 @@
 
   <!-- Tab Content -->
   <div class="tab-content">
-    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+    <div class="tab-pane fade show active bg_thead_position" id="general" role="tabpanel" aria-labelledby="general-tab">
       <div class="row">
         <div class="col-md-4">
           <div class="border rounded border-dark p-3 mb-3">
@@ -61,8 +61,8 @@
                     <td>1</td>
                     <td>1</td>
                     <td>1</td>
-                    <td><strong>1500</strong></td>
-                    <td><strong>0.40</strong></td>
+                    <td>1500</td>
+                    <td>0.40</td>
                   </tr>
                 </tbody>
               </table>
@@ -127,7 +127,7 @@
       </div>
       <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8">
+        <div class="col-md-12">
           <table class="table table-bordered text-center">
             <thead>
               <tr>
@@ -138,9 +138,14 @@
             </thead>
             <tbody>
               <tr>
-                <td><a href=""><i class="bi bi-plus-circle text-primary"></i></a> 05/11/24</td>
-                <td>Expédiée / expédition conforme</td>
+                <td><a><i class="bi bi-caret-right-fill"></i></a> 08/11/24</td>
+                <td>Livrée / Livraison conforme</td>
                 <td>08/11/24 Castanet-Tolosan</td>                
+              </tr>
+              <tr>
+                <td><a><i class="bi bi-caret-right-fill"></i></a> 05/11/24</td>
+                <td>Expédiée / Expédition conforme</td>
+                <td>05/11/24 Castanet-Tolosan</td>          
               </tr>
             </tbody>
           </table>

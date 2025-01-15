@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11849,122 +11850,22 @@ body {
   padding: 0;
   background-color: #D7D6D6;
 }
-
-#presentation #title_presentation {
-  color: #003A85;
-  border-bottom: 5px solid #FFD600;
-  width: fit-content;
-  margin-bottom: 50px;
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Montserrat";
 }
-#presentation .card {
-  height: 250px;
-}
-#presentation a {
-  font-weight: bold;
+body * {
+  font-family: "Open sans";
 }
 
-#title_trackhub {
-  color: #003A85;
-  border-bottom: 5px solid #FFD600;
-  width: fit-content;
-  margin: auto;
+table, th, td {
+  border: 1px solid #000 !important;
 }
 
-#transport {
-  display: flex;
-  flex-direction: column;
-  background: url(/assets/images/transport.jpg) no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 400px;
-}
-#transport #back_transport .subtitle {
-  width: 800px;
-  justify-self: center;
+.container {
   margin-top: 20px;
 }
-#transport #title_transport {
-  color: white;
-  border-bottom: 5px solid #FFD600;
-  width: fit-content;
-  justify-self: center;
-}
-#transport p {
-  color: white;
-}
-#transport a {
-  margin-top: 10px;
-}
-#transport #btn_transport {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.vr {
-  border-left: 2px solid rgb(0, 0, 0);
-  height: auto;
-}
-
-#contact_form {
-  width: 600px;
-}
-
-.navbar-custom {
-  background-color: #3B3571; /* Couleur violette */
-}
-
-.navbar-custom .navbar-brand img {
-  height: 80px; /* Hauteur du logo */
-}
-
-.navbar-nav {
-  margin: 0 auto; /* Centre les éléments de la navigation */
-}
-
-.navbar-custom .nav-link {
-  color: white !important;
-  margin-right: 60px; /* Espacement entre les liens */
-}
-
-.btn-contact {
-  background-color: #FFD700; /* Couleur jaune */
-  color: black;
-  font-weight: bold;
-  margin-left: 40px; /* Espacement après TrackHub */
-}
-
-.btn-contact:hover {
-  background-color: #FFC107; /* Jaune légèrement plus foncé */
-  color: black;
-}
-
-.footer-custom {
-  background-color: #3B3571; /* Couleur violette */
-  color: white;
-  padding: 20px 0;
-  position: relative;
-}
-
-/* Style du logo */
-.footer-logo img {
-  height: 80px;
-  margin-right: 50px;
-}
-
-/* Style des boutons centraux */
-.footer-buttons .btn {
-  background-color: #FFD700; /* Couleur jaune */
-  color: black;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 0 10px;
-}
-
-.footer-buttons .btn:hover {
-  background-color: #FFC107;
-  color: black;
+.container nav.breadcrumb ul li a {
+  color: #000;
 }
 
 .pentagon-btn {
@@ -11973,7 +11874,7 @@ body {
   top: 50px;
   width: 60px;
   height: 60px;
-  background-color: #FFD700;
+  background-color: #FFD600;
   clip-path: polygon(70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%, 0 0);
   display: flex;
   justify-content: center;
@@ -11984,94 +11885,296 @@ body {
 .pentagon-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  background: white;
+  background: #fff;
 }
 .pentagon-btn i {
-  color: black;
+  color: #000;
   font-size: 16px;
   font-weight: bold;
 }
 
-#story {
-  background: url(/assets/images/story_truck.png) no-repeat;
-  background-size: cover;
+hr {
+  border: 1px solid #000;
+  width: 70%;
+  margin: auto;
 }
 
-.container {
-  margin-top: 20px;
-}
-.container nav.breadcrumb ul li a {
-  color: black;
-}
-
-#title_story {
+#presentation #title_presentation {
   color: #003A85;
   border-bottom: 5px solid #FFD600;
   width: fit-content;
   margin-bottom: 50px;
 }
+#presentation .card {
+  height: 310px;
+}
+#presentation .custom-footer {
+  margin-top: auto;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+#presentation .btn {
+  background: #FFD600;
+  font-weight: bold;
+}
+#presentation .btn:hover {
+  color: #003A85;
+}
 
-#story_text .card-content {
+#transport {
+  position: relative;
+  height: 350px;
+  color: #fff;
+}
+#transport #title_transport, #transport p, #transport #btn_transport {
+  position: relative;
+  z-index: 2;
+}
+#transport p {
+  width: 800px;
+  justify-self: center;
+  margin-top: 20px;
+  line-height: 40px;
+}
+#transport #title_transport {
+  color: #fff;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  justify-self: center;
+}
+#transport #btn_transport {
+  text-decoration: underline;
+  font-weight: bold;
+  background: #FFD600;
+  font-size: 20px;
+}
+#transport #btn_transport:hover {
+  color: #003A85;
+  background: #fff;
+}
+#transport .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/assets/images/transport.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+#contact_form {
+  width: 600px;
+}
+#contact_form .btn {
+  background: #FFD600;
+}
+#contact_form .btn:hover {
+  background: #003A85;
+  color: #fff;
+}
+#contact_form .vr {
+  border-left: 2px solid #000;
+  height: auto;
+}
+
+.navbar-custom {
+  background-color: #3B3571;
+}
+.navbar-custom .navbar-brand img {
+  height: 80px;
+}
+.navbar-custom .navbar-nav {
+  margin: 0 auto;
+}
+.navbar-custom .nav-link {
+  color: white !important;
+  margin-right: 60px;
+}
+.navbar-custom .btn-contact {
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.navbar-custom .btn-contact:hover {
+  background-color: #fff;
+  color: #003A85;
+}
+
+.footer-custom {
+  background-color: #3B3A76;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+.footer-custom .footer-logo img {
+  height: 80px;
+  margin-right: 50px;
+}
+.footer-custom .footer-buttons .btn {
+  background-color: #FFD600;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.footer-custom .footer-buttons .btn:hover {
+  background-color: #fff;
+  color: #003A85;
+}
+
+#story #story_image {
+  background: url(/assets/images/story_truck.png) no-repeat;
+  background-size: cover;
+}
+#story #title_story {
+  color: #003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+#story #story_text .card-content {
   margin-bottom: 100px;
 }
-#story_text .card-content p {
+#story #story_text .card-content p {
   margin: 40px;
 }
 
-#services {
+#services #services_image {
   background: url(/assets/images/services.png) no-repeat;
   background-size: cover;
 }
-
-#services_text .card-content {
+#services #title_services {
+  color: #003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+#services #services_text .card-content {
   margin-bottom: 100px;
 }
-#services_text p {
+#services #services_text p {
   margin: 40px;
 }
-#services_text p:nth-child(even) {
+#services #services_text p:nth-child(even) {
   color: #003A85;
   text-decoration: underline;
   font-weight: bold;
 }
 
-table, th, td {
-  border: 1px solid black !important; /* Applique une bordure noire */
+#header_connected .btn {
+  background: #FFD600;
+  font-weight: bold;
+}
+#header_connected .btn:hover {
+  background: #fff;
+  color: #003A85;
 }
 
-.tab-content {
+.trackhub_title {
+  color: #003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+#position .tab-content {
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
 }
-
-.nav-tabs .nav-link {
+#position .nav-tabs .nav-link {
   background-color: #0d6efd;
-  color: white;
+  color: #fff;
   border: 1px solid #0d6efd;
   margin-right: 1px;
 }
-
-.nav-tabs .nav-link.active {
-  background-color: #0056b3; /* Bleu foncé pour l'onglet actif */
-  color: white;
+#position .nav-tabs .nav-link.active {
+  background-color: #003A85;
+  color: #fff;
 }
-
-.btn-custom {
+#position .btn-custom {
   width: 120px;
   height: 40px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   border: none;
 }
-
-.btn-modifier {
-  background-color: #ffc107;
+#position .btn-modifier {
+  background: #FFD600;
+  color: #000;
+}
+#position .btn-modifier:hover {
+  background: #FFD600;
+}
+#position .btn-supprimer {
+  background-color: red;
+  color: #000;
+}
+#position .btn-supprimer:hover {
+  background: red;
+}
+#position .bg_thead_position th {
+  background: #003A85;
+  color: #fff;
+}
+#position .bi-caret-right-fill {
+  color: #003A85;
+}
+#position .bi-caret-up-fill {
+  color: #003A85;
 }
 
-.btn-supprimer {
-  background-color: #f44336;
+#connect button:hover {
+  background: #003A85;
+}
+#connect button:hover a {
+  color: #fff;
+}
+#connect a {
+  text-decoration: none;
+  color: black;
+}
+#connect .btn_connect {
+  background: #FFD600;
+}
+#connect .text_color {
+  color: #FFD600;
+}
+#connect .text_color:hover {
+  color: #000;
+}
+
+#account .btn {
+  background: #FFD600;
+  color: #000;
+}
+#account .btn:hover {
+  background: #003A85;
+  color: #fff;
+}
+
+#add_position, #add_entity {
+  width: 650px;
+}
+#add_position .btn, #add_entity .btn {
+  background: #FFD600;
+  color: #000;
+}
+#add_position .btn:hover, #add_entity .btn:hover {
+  background: #003A85;
+  color: #fff;
+}
+
+#add_entity input[type=submit] {
+  display: flex;
+  width: 180px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

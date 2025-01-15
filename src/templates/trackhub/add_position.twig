@@ -2,9 +2,9 @@
 
 {% block content %}
   <div class="container">
-    <h2 class="text-center">Ajouter une position</h2>
+    <h2 class="text-center trackhub_title">Ajouter une position</h2>
   </div>
-  <div class="container card" style="width: 600px;">
+  <div class="container card" id="add_position" >
     <form action="">
       <div class="input-group my-3">
         <label class="input-group-text ">Expéditeur</label>
@@ -14,7 +14,7 @@
             <option value="">Coca cola</option>
           </select>
         </div>
-        <a href="{{adress}}?page=add-entity" class="btn btn-success ms-2 rounded">Ajouter un expéditeur</a>
+        <a href="{{adress}}?page=add-entity" class="btn ms-2 rounded">Ajouter un expéditeur</a>
       </div>
       <div class="input-group mb-3">
         <label class="input-group-text ">Destinataire</label>
@@ -24,7 +24,7 @@
             <option value="">Leclerc</option>
           </select>
         </div>
-        <a href="{{adress}}?page=add-entity" class="btn btn-success ms-2 rounded">Ajouter un destinataire</a>
+        <a href="{{adress}}?page=add-entity" class="btn ms-2 rounded">Ajouter un destinataire</a>
       </div>
 
       <div class="mb-3">
@@ -44,6 +44,6 @@
         <input type="number" max="33" class="form-control" name="" id="" placeholder="Ex : 6 pour 15 palettes"/>
       </div>
     </form>
-    <input type="submit" class="btn btn-success mb-3" value="AJOUTER" style="width: 180px;margin:auto;">
+    <input type="submit" class="btn mb-3" value="AJOUTER" style="width: 180px;margin:auto;">
   </div>
 {% endblock content %}

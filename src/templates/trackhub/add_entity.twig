@@ -2,11 +2,12 @@
 
 {% block content %}
 <div class="container">
-  <h2 class="text-center">Ajouter un expéditeur ou un destinataire</h2>
+  <h2 class="trackhub_title">Ajouter un expéditeur ou un destinataire</h2>
 </div>
-<div class="container card" style="width: 600px;">
+<div class="container card" id="add_entity">
   <form action="">
     <div class="input-group my-3">
+      <label class="input-group-text ">Chosir</label>
       <div class=" select">
         <select class="form-select" aria-label="" spellcheck="false">
           <option selected>Séléctionner</option>
@@ -40,7 +41,7 @@
       <label for="" class="form-label">Nom du responsable</label>
       <input type="text" class="form-control" name="" id="" placeholder="Ex : Dupont"/>
     </div>
-    <input type="submit" class="btn btn-success mb-3 d-flex" value="AJOUTER" style="width: 180px;margin:auto;">
+    <input type="submit" class="btn mb-3" value="AJOUTER">
   </form>
 </div>
 {% endblock content %}
