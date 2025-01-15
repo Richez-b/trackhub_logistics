@@ -34,7 +34,7 @@ try {
     case 'connect':
       echo $twig->render('trackhub/connect.twig', ['title' => 'App Trackhub connexion','adress'=>$adress]);
       break;
-    case 'positions':
+    case 'all-positions':
       echo $twig->render('trackhub/all_position.twig',['title'=>'Positions','adress'=>$adress]);
       break;
     case 'position':

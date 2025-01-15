@@ -73,6 +73,10 @@ hr {
 
 // SECTION PRESENTATION //
 #presentation {
+  #presentation_image {
+    background: url(/assets/images/image_home.jpg) no-repeat;
+    background-position: center;
+  }
   #title_presentation {
     color:$is-blue;
     border-bottom: 5px solid $is-primary;
@@ -160,6 +164,7 @@ hr {
 
 // SECTION HEADER
 .navbar-custom {
+  height: 100px;
   background-color: #3B3571;
   .navbar-brand img {
     height: 80px;

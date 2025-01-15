@@ -11899,6 +11899,10 @@ hr {
   margin: auto;
 }
 
+#presentation #presentation_image {
+  background: url(/assets/images/image_home.jpg) no-repeat;
+  background-position: center;
+}
 #presentation #title_presentation {
   color: #003A85;
   border-bottom: 5px solid #FFD600;
@@ -11981,6 +11985,7 @@ hr {
 }
 
 .navbar-custom {
+  height: 100px;
   background-color: #3B3571;
 }
 .navbar-custom .navbar-brand img {
