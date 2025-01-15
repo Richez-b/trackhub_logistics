@@ -11989,7 +11989,7 @@ hr {
   background-color: #3B3571;
 }
 .navbar-custom .navbar-brand img {
-  height: 80px;
+  height: 50px;
 }
 .navbar-custom .navbar-nav {
   margin: 0 auto;
@@ -12016,7 +12016,7 @@ hr {
   position: relative;
 }
 .footer-custom .footer-logo img {
-  height: 80px;
+  height: 50px;
   margin-right: 50px;
 }
 .footer-custom .footer-buttons .btn {
@@ -12153,6 +12153,12 @@ hr {
 }
 #connect .text_color:hover {
   color: #000;
+}
+#connect #title_connect {
+  color: #003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin-bottom: 50px;
 }
 
 #account .btn {

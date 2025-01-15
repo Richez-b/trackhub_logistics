@@ -167,7 +167,7 @@ hr {
   height: 100px;
   background-color: #3B3571;
   .navbar-brand img {
-    height: 80px;
+    height: 50px;
   }
   .navbar-nav {
     margin: 0 auto;
@@ -195,7 +195,7 @@ hr {
   padding: 20px 0;
   position: relative;
   .footer-logo img {
-    height: 80px;
+    height: 50px;
     margin-right: 50px;
   }
   .footer-buttons {
@@ -356,6 +356,12 @@ hr {
     &:hover {
       color:$is-black;
     }
+  }
+  #title_connect {
+    color:$is-blue;
+    border-bottom: 5px solid $is-primary;
+    width: fit-content;
+    margin-bottom: 50px;
   }
 }
 // PAGE COMPTE
