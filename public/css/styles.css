@@ -11969,6 +11969,13 @@ hr {
   z-index: 1;
 }
 
+#title_contact {
+  color: #003A85;
+  border-bottom: 5px solid #FFD600;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
 #contact_form {
   width: 600px;
 }

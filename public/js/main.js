@@ -33,17 +33,17 @@ function addRow() {
           const row = this.closest("tr"); // Trouver l'ancêtre le plus proche correspondant à un sélecteur.
           let detailsRow = row.nextElementSibling; // Trouver l'élément suivant au même niveau.
           
-          // verifie s'il y'a ligne qui existe deja
+          // Vérifie si la ligne existe déja et si elle a la class details row
           if (detailsRow && detailsRow.classList.contains("details-row")) {
               // Condition ternaire pour afficher ou non la nouvelle ligne
               detailsRow.style.display = detailsRow.style.display === "none" ? "table-row" : "none";
           } else {
-              // Sinon, création d'une nouvelle ligne
+              // Sinon création d'une nouvelle ligne
               detailsRow = document.createElement("tr");
               detailsRow.classList.add("details-row");
 
               const cell = document.createElement("td");
-              cell.colSpan = 3; // Définir l'attribut colspan
+              cell.colSpan = 3;
               cell.innerText = "Informations complémentaires :\nVous pouvez ajouter ici toutes les informations nécessaires.";
               
               detailsRow.appendChild(cell);
@@ -52,7 +52,7 @@ function addRow() {
               row.parentNode.insertBefore(detailsRow, row.nextElementSibling);
           }
 
-          // Changer l'icône (+ ou -)
+          // Changer l'icône
           this.classList.toggle("bi-caret-right-fill");
           this.classList.toggle("bi-caret-up-fill");
       });

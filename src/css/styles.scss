@@ -147,6 +147,12 @@ hr {
 }
 
 // SECTION CONTACT
+#title_contact {
+  color:$is-blue;
+  border-bottom: 5px solid $is-primary;
+  width: fit-content;
+  margin-bottom: 50px;
+}
 #contact_form {
   width:600px;
   .btn {
